@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
-  constructor() {}
+
+  selectedTabIdx = 0;
+
+  tooManyTabs = Array(30).fill({ name: 'Tab'});
+
+  smallNumberOftabs = Array(2).fill({name : 'Tab'});
+
+  constructor() {
+  }
+
+  onTabChange() {
+    console.log('Tab Changed');
+  }
 }
