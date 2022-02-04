@@ -9,7 +9,7 @@ export class HomeComponent {
 
   selectedTabIdx = 0;
 
-  tooManyTabs = Array(30).fill({ name: 'Tab'});
+  tooManyTabs = Array(40).fill({ name: 'Tab'});
 
   smallNumberOftabs = Array(2).fill({name : 'Tab'});
 

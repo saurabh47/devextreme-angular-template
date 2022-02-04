@@ -2,7 +2,7 @@
 <section>
   <dx-tabs [width]="'fit-content'" [scrollByContent]="true" [showNavButtons]="true" [(selectedIndex)]="selectedTabIdx"
     (onSelectionChanged)="onTabChange()">
-    <dxi-item [width]="'fit-content'" *ngFor="let tab of tooManyTabs">
+    <dxi-item *ngFor="let tab of tooManyTabs">
       <span>{{ tab.name }}</span>
     </dxi-item>
   </dx-tabs>
@@ -12,7 +12,7 @@
 <section>
   <dx-tabs [width]="'100%'" [scrollByContent]="true" [showNavButtons]="true" [(selectedIndex)]="selectedTabIdx"
     (onSelectionChanged)="onTabChange()">
-    <dxi-item [width]="'fit-content'" *ngFor="let tab of tooManyTabs">
+    <dxi-item *ngFor="let tab of tooManyTabs">
       <span>{{ tab.name }}</span>
     </dxi-item>
   </dx-tabs>
@@ -23,7 +23,16 @@
 <section>
   <dx-tabs [width]="'fit-content'" [scrollByContent]="true" [showNavButtons]="true" [(selectedIndex)]="selectedTabIdx"
     (onSelectionChanged)="onTabChange()">
-    <dxi-item [width]="'fit-content'" *ngFor="let tab of smallNumberOftabs">
+    <dxi-item *ngFor="let tab of smallNumberOftabs">
+      <span>{{ tab.name }}</span>
+    </dxi-item>
+  </dx-tabs>
+</section>
+<h2 style="color: red;">4. For less number of Tabs (Width set to 100%)</h2>
+<section>
+  <dx-tabs [width]="'100%'" [scrollByContent]="true" [showNavButtons]="true" [(selectedIndex)]="selectedTabIdx"
+    (onSelectionChanged)="onTabChange()">
+    <dxi-item *ngFor="let tab of smallNumberOftabs">
       <span>{{ tab.name }}</span>
     </dxi-item>
   </dx-tabs>
